@@ -12,7 +12,7 @@ const Contact = (props) => {
 
     const callContactPage = async () => {
         try {
-            const res = await fetch('/getData', {
+            const res = await fetch('https://backend-jyr1.onrender.com/getData', {
                 method: 'GET',
                 headers: {
                     "Content-Type": "application/json"

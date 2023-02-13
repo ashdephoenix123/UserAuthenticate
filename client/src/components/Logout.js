@@ -8,7 +8,7 @@ const Logout = () => {
 
     const implementLogout = async () => {
         try {
-            const response = await fetch('/logout', {
+            const response = await fetch('https://backend-jyr1.onrender.com/logout', {
                 method: 'GET',
                 headers: {
                     Accept: "application/json",

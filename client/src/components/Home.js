@@ -9,7 +9,7 @@ const Home = (props) => {
     useEffect(() => {
         const userInfo = async () => {
             try {
-                const response = await fetch('/getData', {
+                const response = await fetch('https://backend-jyr1.onrender.com/getData', {
                     method: "GET",
                     header: {
                         "Content-Type": "application/json"

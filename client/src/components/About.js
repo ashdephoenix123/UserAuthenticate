@@ -19,7 +19,7 @@ const About = (props) => {
         const callAboutPage = async () => {
             try {
                 setProgress(10)
-                const res = await fetch('/about', {
+                const res = await fetch('https://backend-jyr1.onrender.com/about', {
                     method: 'GET',
                     headers: {
                         Accept: "application/json",

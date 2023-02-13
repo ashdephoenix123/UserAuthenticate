@@ -35,7 +35,7 @@ const Signup = (props) => {
 
         const { name, email, phone, work, password, cpassword } = user;
         setProgress(30)
-        const res = await fetch('/signup', {
+        const res = await fetch('https://backend-jyr1.onrender.com/signup', {
             method: 'POST',
             headers: {
                 'Content-Type': "application/json"
