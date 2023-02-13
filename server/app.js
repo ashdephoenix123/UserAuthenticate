@@ -7,7 +7,9 @@ require('./db/conn')
 
 const app = express();
 app.use(cookieParser()) //handles the cookies
-app.use(cors())
+app.use(cors({
+    origin: "https://userauthenticationreact.netlify.app/"
+}))
 app.use(express.json())  // tells the server to serve the json responses in object form
 app.use(require('./router/auth'));
 
